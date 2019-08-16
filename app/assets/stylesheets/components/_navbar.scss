@@ -1,12 +1,25 @@
-.navbar-lewagon {
+.navbar-my-cocktail {
   justify-content: space-between;
   background: white;
 }
 
-.navbar-lewagon .navbar-collapse {
+.navbar-my-cocktail .navbar-collapse {
   flex-grow: 0;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+// .navbar-my-cocktail .navbar-background-image img {
+//   // background-size: cover;
+//   width: 240px;
+//   height: 160px;
+  // crop: :fill;
+// }
+
+// .navbar-my-cocktail .nav-item {
+//   text-align: center;
+// }
+
+.navbar-my-cocktail .navbar-brand img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
 }

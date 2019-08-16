@@ -1,16 +1,42 @@
+<div class="navbar navbar-expand-sm navbar-light navbar-my-cocktail">
+  <%= link_to "#", class: "navbar-brand" do %>
+    <%= cl_image_tag "kyryll-ushakov-lwoTuByIuC4-unsplash_loy1bf" %>
+  <% end %>
+
+  <%#= link_to "#", class: "navbar-background-image" do %>
+    <%#= cl_image_tag "kobby-mendez-xBFTjrMIC0c-unsplash_z5zkat"%>
+  <%# end %>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <%= link_to "Home", root_path, class: "nav-link" %>
+      </li>
+      <li>
+       <%= link_to "Add a new cocktail", new_cocktail_path, class:"btn btn-ghost" %>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+
 <div class="container">
-  <h1>List of cocktails</h1>
   <br>
 
-  <% @cocktails.each do |cocktail| %>
     <div class="card-product">
-      <img src="" />
-      <div class="card-product-infos">
-        <h2><%= link_to "🍹", cocktail_path(cocktail) %> <%= cocktail.name %></h2>
-      </div>
+      <% @cocktails.each do |cocktail| %>
+        <img src="" />
+        <div class="card-product-infos">
+          <h2><%= link_to "🍹", cocktail_path(cocktail) %> <%= cocktail.name %></h2>
+        </div>
     <% end %>
   </div>
 
 
-  <p><%= link_to "📝 Add a new cocktail", new_cocktail_path, class:"btn btn-primary" %></p>
 </div>
