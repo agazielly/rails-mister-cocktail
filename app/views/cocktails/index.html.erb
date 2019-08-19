@@ -29,11 +29,11 @@
 <div class="container">
   <br>
 
-    <div class="card-product">
       <% @cocktails.each do |cocktail| %>
+      <h2><%= link_to "🍹", cocktail_path(cocktail) %> <%= cocktail.name %></h2>
+    <div class="card-product">
         <img src="" />
         <div class="card-product-infos">
-          <h2><%= link_to "🍹", cocktail_path(cocktail) %> <%= cocktail.name %></h2>
         </div>
     <% end %>
   </div>
